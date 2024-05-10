@@ -43,11 +43,10 @@ const App = () => {
             />
           ))}
         </div>
-        {modalIsOpen ? (
+      </div>
+      {modalIsOpen ? (
         <Modal postData={modalData} cancelModal={() => setModalIsOpen(false)} />
       ) : null}
-      </div>
-     
     </>
   );
 };
